@@ -1,0 +1,18 @@
+
+
+Create user:
+
+curl -H "Accept: application/json" -H "Content-type: application/json" -i http://tomcat-senacor.rhcloud.com/rest_ws-1.0/tasks -X POST --data '{"title":"Made by curl."}'
+
+Read user:
+
+curl -H "Accept: application/json" -H "Content-type: application/json" -i http://tomcat-senacor.rhcloud.com/rest_ws-1.0/tasks/36 -X GET
+
+Update user:
+
+curl -H "Accept: application/json" -H "Content-type: application/json" -i http://tomcat-senacor.rhcloud.com/rest_ws-1.0/tasks/36 -X PUT --data '{"id":36,"title":"Updated by curl."}'
+
+Delete user:
+
+curl -H "Accept: application/json" -H "Content-type: application/json" -i http://tomcat-senacor.rhcloud.com/rest_ws-1.0/tasks/36 -X DELETE
+

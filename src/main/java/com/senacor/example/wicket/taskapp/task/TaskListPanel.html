@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+      xml:lang="de" lang="de">
+<head>
+</head>
+
+<body>
+<wicket:panel>
+    <!--input wicket:id="allCheckbox" id="toggle-all" type="checkbox"-->
+    <!--label for="toggle-all">Mark all as complete</label-->
+    <ul id="task-list" wicket:id="taskList">
+        <li>
+            <div class="view">
+                <input wicket:id="completedCheckbox" class="toggle" type="checkbox">
+                <label wicket:id="titleLabel"></label>
+
+                <form wicket:id="deleteTaskForm">
+                    <button wicket:id="deleteButton" class="destroy"></button>
+                </form>
+            </div>
+        </li>
+    </ul>
+</wicket:panel>
+</body>
+</html>
